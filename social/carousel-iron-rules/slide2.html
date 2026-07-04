@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang='he'>
+<head><meta charset='utf-8'><style>
+@import url('fonts/fonts-local.css');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --bg: #262b3a;
+  --ink: #b9d5d9;
+  --ink-dim: rgba(185,213,217,.82);
+}
+
+html,body { width:1080px; height:1350px; overflow:hidden; }
+
+.slide {
+  position:relative;
+  width:1080px; height:1350px;
+  background:
+    radial-gradient(ellipse 120% 90% at 50% 40%, rgba(255,255,255,.045), rgba(0,0,0,.22) 85%),
+    var(--bg);
+  color:var(--ink);
+  direction:rtl;
+  font-family:'Heebo',sans-serif;
+  overflow:hidden;
+}
+
+/* denim grain */
+.grain {
+  position:absolute; inset:0; pointer-events:none; z-index:50;
+  opacity:.5; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)' opacity='0.9'/></svg>");
+  background-size:300px 300px;
+}
+.grain2 {
+  position:absolute; inset:0; pointer-events:none; z-index:51;
+  opacity:.22; mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.012 0.02' numOctaves='4' stitchTiles='stitch'/></filter><rect width='900' height='900' filter='url(%23n)' opacity='1'/></svg>");
+  background-size:900px 900px;
+}
+
+.slab { font-family:'Suez One',serif; font-weight:400; }
+
+h1,h2,h3 { font-family:'Suez One',serif; font-weight:400; letter-spacing:.01em; }
+
+.ink-soft { text-shadow:0 0 3px rgba(185,213,217,.28); }
+
+.star { display:inline-block; }
+
+/* footer strip shared by slides 2-4 */
+.footer {
+  position:absolute; bottom:52px; left:0; right:0;
+  display:flex; align-items:center; justify-content:center; gap:26px;
+  direction:ltr;
+}
+.footer .stars { letter-spacing:16px; font-size:30px; opacity:.9; }
+.footer .brand { font-family:'Suez One',serif; font-size:40px; letter-spacing:.06em; }
+.footer .site  { font-family:'Heebo'; font-weight:500; font-size:24px; letter-spacing:.14em; opacity:.85; }
+</style></head>
+<body>
+<div class='slide'>
+  <div class='grain'></div><div class='grain2'></div>
+  
+    <div style='position:absolute; top:90px; right:70px; left:70px;'>
+      <div style='display:flex; align-items:baseline; gap:42px;'>
+        <div style='font-family:Heebo; font-weight:400; font-size:56px; opacity:.92; min-width:96px;'>01</div>
+        <div class='slab' style='font-size:92px; line-height:1;'>חוק החלבון</div>
+      </div>
+      <div style='margin-top:26px; margin-right:138px; font-weight:400; font-size:41px; line-height:1.42; color:var(--ink-dim); max-width:830px;'>חלבון זה לא רק שייק אחרי אימון. פזרו אותו על פני היום — 3–4 מנות שוות בונות שריר טוב יותר מכל בומבה אחת בסוף האימון.</div>
+    </div>
+    
+  
+    <div style='position:absolute; top:500px; right:70px; left:70px;'>
+      <div style='display:flex; align-items:baseline; gap:42px;'>
+        <div style='font-family:Heebo; font-weight:400; font-size:56px; opacity:.92; min-width:96px;'>02</div>
+        <div class='slab' style='font-size:92px; line-height:1;'>חוק הדלק</div>
+      </div>
+      <div style='margin-top:26px; margin-right:138px; font-weight:400; font-size:41px; line-height:1.42; color:var(--ink-dim); max-width:830px;'>פחמימה לפני אימון היא לא פינוק — היא דלק. בננה או פרוסת לחם 30–60 דקות לפני, ותרגישו את ההבדל בסטים האחרונים.</div>
+    </div>
+    
+  
+    <div style='position:absolute; top:890px; right:70px; left:70px;'>
+      <div style='display:flex; align-items:baseline; gap:42px;'>
+        <div style='font-family:Heebo; font-weight:400; font-size:56px; opacity:.92; min-width:96px;'>03</div>
+        <div class='slab' style='font-size:92px; line-height:1;'>חוק החלון</div>
+      </div>
+      <div style='margin-top:26px; margin-right:138px; font-weight:400; font-size:41px; line-height:1.42; color:var(--ink-dim); max-width:830px;'>״החלון האנבולי״ לא נסגר אחרי 30 דקות. מה שקובע זה הסך היומי — אבל ארוחה מסודרת עד שעתיים מהאימון היא מהלך חכם.</div>
+    </div>
+    
+  
+<div class='footer'>
+  <span class='stars'>★ ★ ★ ★</span>
+  <span class='brand'>klyo</span>
+  <span class='site'>TRYKLYO.IO</span>
+  <span class='stars'>★ ★ ★ ★</span>
+</div>
+
+</div>
+</body>
+</html>
