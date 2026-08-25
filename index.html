@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>klyo — Nutrition That Fits Your Day | Meal &amp; Macro Tracking with AI Coaching</title>
-<meta name="description" content="klyo is a nutrition app that fits your day: log meals from a photo, track calories and macros, get AI coaching, and time your meals around your calendar. Set targets, track weight, stay on plan.">
-<meta name="keywords" content="nutrition app, calorie tracker, macro tracking, meal logging, AI nutrition coach, meal timing, weight tracking, food diary, klyo">
+<title>klyo — Nutrition That Fits Your Day | Photo Meal &amp; Macro Tracking</title>
+<meta name="description" content="klyo is a nutrition app that fits your day: log meals from a photo, track calories and macros, and get eating windows timed around your real calendar. Set targets, track weight, stay on plan.">
 <meta name="robots" content="index, follow">
 <meta name="author" content="klyo">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="canonical" href="https://tryklyo.io/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="klyo">
 <meta property="og:title" content="klyo — Nutrition That Fits Your Day">
-<meta property="og:description" content="Log meals from a photo, track calories and macros, get AI coaching, and time your meals around your calendar.">
+<meta property="og:description" content="Log meals from a photo, track calories and macros, and get eating windows timed around your real calendar.">
 <meta property="og:url" content="https://tryklyo.io/">
 <meta property="og:locale" content="en_US">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="klyo — Nutrition That Fits Your Day">
-<meta name="twitter:description" content="Log meals from a photo, track calories and macros, get AI coaching, and time your meals around your calendar.">
+<meta name="twitter:description" content="Log meals from a photo, track calories and macros, and get eating windows timed around your real calendar.">
 
 <link rel="stylesheet" href="/style.css">
 
@@ -34,12 +34,14 @@
   "url": "https://tryklyo.io/",
   "applicationCategory": "HealthApplication",
   "operatingSystem": "iOS, Android",
-  "description": "klyo is a nutrition app that fits your day: log meals from a photo, track calories and macros, get AI coaching, and time your meals around your calendar.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
+  "description": "klyo is a nutrition app that fits your day: log meals from a photo, track calories and macros, and get eating windows timed around your real calendar.",
+  "featureList": [
+    "Log meals from a photo or plain text",
+    "Calorie, protein, carbohydrate and fat tracking",
+    "Personalised daily targets",
+    "Meal timing around your calendar",
+    "Weight and progress tracking"
+  ],
   "publisher": {
     "@type": "Organization",
     "name": "klyo",
@@ -48,34 +50,127 @@
   }
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does klyo track a meal from a photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Capture or upload a photo of what you are eating and klyo estimates the serving size along with calories, protein, carbohydrates and fat. You can also log a meal by typing a short description instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does klyo work out my daily calorie and macro targets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your targets are calculated from your age, sex, height, weight and activity level, together with whether you want to lose, maintain or gain weight and at what pace. The calculation uses standard formulas such as Mifflin-St Jeor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does nutrition that fits your day mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you grant calendar access, klyo reads your upcoming events and suggests eating windows that fit around them, so meals land in the gaps you actually have. Only the event start time, end time and title are stored. Location and attendees are never stored."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms does klyo run on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "klyo is a mobile app for iOS and Android. You can sign in with Apple or Google, or with an email address."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does klyo give medical or dietary advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. klyo is not a medical device and does not provide medical advice. Targets and coaching responses are informational only. Consult a qualified healthcare professional before making significant changes to your diet. Do not use klyo if you have or are recovering from an eating disorder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my data stored and can I delete it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your data is stored in the EU, in Frankfurt. You can delete your account and everything associated with it at any time from Settings, and klyo does not sell your data or use it for advertising."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <section class="hero">
   <h1 class="logo">klyo</h1>
   <p class="tagline">Nutrition that fits your day.</p>
-  <p class="intro">Log a meal from a photo, track your calories and macros, and get AI coaching that adapts to your goals — with meal timing that works around your real schedule.</p>
+  <p class="intro">Log a meal from a photo, track your calories and macros, and get eating windows timed around your real schedule — not around someone else's idea of a perfect day.</p>
   <div class="links">
-    <a href="/privacy">Privacy Policy</a>
-    <a href="/terms">Terms of Service</a>
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Service</a>
     <a href="mailto:info@tryklyo.io">Contact</a>
   </div>
 </section>
 
-<section class="features container" aria-label="What klyo does">
-  <h2>What klyo does</h2>
+<main class="container">
+
+<section aria-labelledby="what">
+  <h2 id="what">What klyo does</h2>
   <ul class="feature-list">
-    <li><strong>Snap &amp; log meals</strong> — capture a photo and get an estimate of calories, protein, carbs, and fat.</li>
-    <li><strong>Personal targets</strong> — set a goal to lose, maintain, or gain weight, and klyo calculates your daily targets.</li>
-    <li><strong>AI nutrition coach</strong> — ask questions and get guidance based on your recent intake and progress.</li>
-    <li><strong>Meal timing around your day</strong> — with your permission, klyo reads your calendar to suggest eating windows that fit your schedule.</li>
-    <li><strong>Weight &amp; progress tracking</strong> — log your weight over time and watch the trend, not the noise.</li>
+    <li><strong>Log meals from a photo</strong> — capture what is on your plate and klyo estimates serving size, calories, protein, carbohydrates and fat. Prefer typing? A short description works too.</li>
+    <li><strong>Targets built around you</strong> — your daily numbers come from your age, sex, height, weight and activity level, plus whether you want to lose, maintain or gain weight and how fast.</li>
+    <li><strong>Eating windows that fit your calendar</strong> — grant calendar access and klyo suggests meal times around the events you already have, instead of assuming your day is empty.</li>
+    <li><strong>An AI coach with context</strong> — ask questions and get answers that take your recent intake and progress into account.</li>
+    <li><strong>Weight and progress tracking</strong> — log your weight over time and follow the trend rather than reacting to daily noise.</li>
   </ul>
+</section>
+
+<section aria-labelledby="how">
+  <h2 id="how">How it works</h2>
+  <ol class="steps">
+    <li><strong>Set your goal.</strong> Tell klyo a few basics and whether you are aiming to lose, maintain or gain weight. klyo turns that into daily calorie and macro targets.</li>
+    <li><strong>Log as you go.</strong> Snap a photo of a meal or type a line about it. Each entry updates what you have left for the day.</li>
+    <li><strong>Eat on a schedule that exists.</strong> With calendar access, klyo proposes eating windows around your real commitments and can remind you when one opens.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="faq">
+  <h2 id="faq">Frequently asked questions</h2>
+
+  <h3>How does klyo track a meal from a photo?</h3>
+  <p>Capture or upload a photo of what you are eating and klyo estimates the serving size along with calories, protein, carbohydrates and fat. You can also log a meal by typing a short description instead.</p>
+
+  <h3>How does klyo work out my daily calorie and macro targets?</h3>
+  <p>Your targets are calculated from your age, sex, height, weight and activity level, together with whether you want to lose, maintain or gain weight and at what pace. The calculation uses standard formulas such as Mifflin-St Jeor.</p>
+
+  <h3>What does “nutrition that fits your day” mean?</h3>
+  <p>If you grant calendar access, klyo reads your upcoming events and suggests eating windows that fit around them, so meals land in the gaps you actually have. Only the event start time, end time and title are stored — location and attendees never are.</p>
+
+  <h3>Which platforms does klyo run on?</h3>
+  <p>klyo is a mobile app for iOS and Android. You can sign in with Apple or Google, or with an email address.</p>
+
+  <h3>Does klyo give medical or dietary advice?</h3>
+  <p>No. klyo is not a medical device and does not provide medical advice. Targets and coaching responses are informational only. Consult a qualified healthcare professional before making significant changes to your diet. Do not use klyo if you have or are recovering from an eating disorder.</p>
+
+  <h3>Where is my data stored and can I delete it?</h3>
+  <p>Your data is stored in the EU, in Frankfurt. You can delete your account and everything associated with it at any time from Settings, and klyo does not sell your data or use it for advertising. See the <a href="/privacy/">Privacy Policy</a> for the full detail.</p>
 </section>
 
 <footer>
   <a href="/">klyo</a> &middot;
-  <a href="/privacy">Privacy</a> &middot;
-  <a href="/terms">Terms</a>
+  <a href="/privacy/">Privacy</a> &middot;
+  <a href="/terms/">Terms</a> &middot;
+  <a href="mailto:info@tryklyo.io">Contact</a>
 </footer>
+
+</main>
 </body>
 </html>
